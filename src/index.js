@@ -1,13 +1,3 @@
-import _ from 'lodash';
-import './style.css';
-
-function component() {
-    const element = document.createElement('div');
-
-    element.innerHTML = _.join(['Hello', 'webpack'], ' ');
-    element.classList.add('hello');
-
-    return element;
-}
-
-document.body.appendChild(component());
+// import Icon from './icon.jpg';
+import './style/main.styl';
+import './js/main.js';
