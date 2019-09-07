@@ -1,9 +1,17 @@
-<!DOCTYPE html>
-html(lang="en")
-    head
-        meta(charset="UTF-8")
-        meta(name="viewport", content="width=device-width, initial-scale=1.0")
-        meta(http-equiv="X-UA-Compatible", content="ie=edge")
-        title Document
-    body
-        h1 pug, mag, dans 1 2 3 22
+//- ====================
+//- Главная страница.
+//- ====================
+
+//- Используем стандартный шаблон Project
+extends ./layout/base
+
+//- Модифицируем head
+block head
+    - var pageTitle = 'Gulp start server';
+
+//- Выводим попапы
+block popup
+
+//- Выводим content
+block content
+    h1 1

@@ -1,1 +1,86 @@
-<div>2</div><script type="text/javascript" src="bundle.js"></script>
+Html Webpack Plugin:
+<pre>
+  Error: Child compilation failed:
+  Module parse failed: Unexpected token (1:0)
+  File was processed with these loaders:
+   * ./node_modules/html-webpack-plugin/lib/loader.js
+   * ./node_modules/pug-html-loader/lib/index.js
+  You may need an additional loader to handle the result of these loaders.
+  > <div>2</div>:
+  SyntaxError: Unexpected token (1:0)
+  
+  - compiler.js:79 childCompiler.runAsChild
+    [webpack_start_pack]/[html-webpack-plugin]/lib/compiler.js:79:16
+  
+  - Compiler.js:343 compile
+    [webpack_start_pack]/[webpack]/lib/Compiler.js:343:11
+  
+  - Compiler.js:671 hooks.afterCompile.callAsync.err
+    [webpack_start_pack]/[webpack]/lib/Compiler.js:671:15
+  
+  
+  - Hook.js:154 AsyncSeriesHook.lazyCompileHook
+    [webpack_start_pack]/[tapable]/lib/Hook.js:154:20
+  
+  - Compiler.js:668 compilation.seal.err
+    [webpack_start_pack]/[webpack]/lib/Compiler.js:668:31
+  
+  
+  - Hook.js:154 AsyncSeriesHook.lazyCompileHook
+    [webpack_start_pack]/[tapable]/lib/Hook.js:154:20
+  
+  - Compilation.js:1385 hooks.optimizeAssets.callAsync.err
+    [webpack_start_pack]/[webpack]/lib/Compilation.js:1385:35
+  
+  
+  - Hook.js:154 AsyncSeriesHook.lazyCompileHook
+    [webpack_start_pack]/[tapable]/lib/Hook.js:154:20
+  
+  - Compilation.js:1376 hooks.optimizeChunkAssets.callAsync.err
+    [webpack_start_pack]/[webpack]/lib/Compilation.js:1376:32
+  
+  
+  - Hook.js:154 AsyncSeriesHook.lazyCompileHook
+    [webpack_start_pack]/[tapable]/lib/Hook.js:154:20
+  
+  - Compilation.js:1371 hooks.additionalAssets.callAsync.err
+    [webpack_start_pack]/[webpack]/lib/Compilation.js:1371:36
+  
+  
+  - Hook.js:154 AsyncSeriesHook.lazyCompileHook
+    [webpack_start_pack]/[tapable]/lib/Hook.js:154:20
+  
+  - Compilation.js:1367 hooks.optimizeTree.callAsync.err
+    [webpack_start_pack]/[webpack]/lib/Compilation.js:1367:32
+  
+  
+  - Hook.js:154 AsyncSeriesHook.lazyCompileHook
+    [webpack_start_pack]/[tapable]/lib/Hook.js:154:20
+  
+  - Compilation.js:1304 Compilation.seal
+    [webpack_start_pack]/[webpack]/lib/Compilation.js:1304:27
+  
+  - Compiler.js:665 compilation.finish.err
+    [webpack_start_pack]/[webpack]/lib/Compiler.js:665:18
+  
+  - Compilation.js:1224 hooks.finishModules.callAsync.err
+    [webpack_start_pack]/[webpack]/lib/Compilation.js:1224:4
+  
+  
+  - Hook.js:154 AsyncSeriesHook.lazyCompileHook
+    [webpack_start_pack]/[tapable]/lib/Hook.js:154:20
+  
+  - Compilation.js:1216 Compilation.finish
+    [webpack_start_pack]/[webpack]/lib/Compilation.js:1216:28
+  
+  - Compiler.js:662 hooks.make.callAsync.err
+    [webpack_start_pack]/[webpack]/lib/Compiler.js:662:17
+  
+  
+  - Compilation.js:1148 _addModuleChain
+    [webpack_start_pack]/[webpack]/lib/Compilation.js:1148:12
+  
+  - Compilation.js:1060 processModuleDependencies.err
+    [webpack_start_pack]/[webpack]/lib/Compilation.js:1060:9
+  
+</pre><script type="text/javascript" src="bundle.js"></script>

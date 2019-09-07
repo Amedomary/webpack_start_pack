@@ -1,1 +1,86 @@
-<!DOCTYPE html><!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><meta http-equiv="X-UA-Compatible" content="ie=edge"><title>Document</title></head><body><h1>pug, mag, dans 1 2 3 22</h1><script type="text/javascript" src="bundle.js"></script></body></html>
+Html Webpack Plugin:
+<pre>
+  Error: Child compilation failed:
+  Module parse failed: Unexpected token (1:0)
+  File was processed with these loaders:
+   * ./node_modules/html-webpack-plugin/lib/loader.js
+   * ./node_modules/pug-html-loader/lib/index.js
+  You may need an additional loader to handle the result of these loaders.
+  > <!DOCTYPE html><!DOCTYPE js><html lang="en"><head><meta charset="utf-8"/><meta na  me="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minima  l-ui, user-scalable=no"/><meta name="skype_toolbar" content="skype_toolbar_parser_c  ompatible"/><meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/><meta na  me="google" value="notranslate"/><meta name="format-detection" content="telephone=n  o"/><meta name="og:type" content="website"/><meta name="og:locale" content="en_GB"/  ><meta name="theme-color" content="#ff8c00"/><meta name="msapplication-navbutton-co  lor" content="#ff8c00"/><meta name="apple-mobile-web-app-status-bar-style" content=  "default"/><link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,7  00&amp;amp;subset=cyrillic" rel="stylesheet"/><link href="css/main.css" rel="styles  heet"/><link href="css/desktop-big.css" rel="stylesheet"/><link href="css/desktop.c  ss" rel="stylesheet" media="(max-width: 1439px)"/><link href="css/desktop-min.css"   rel="stylesheet" media="(max-width: 1365px)"/><link href="css/tablet.css" rel="styl  esheet" media="(max-width: 1023px)"/><link href="css/mobile.css" rel="stylesheet" m  edia="(max-width: 767px)"/><script src="https://code.jquery.com/jquery-3.4.1.min.js  "></script><title>Gulp start server</title><meta name="description" content=""/><me  ta name="keywords" content=""/></head><body class="page-wrapper"><main class="page"  ><header class="header"><nav class="menu"><a class="_logo" href="#">Company</a><div   class="list"><a class="_item -active" href="#">Home</a><a class="_item" href="#">N  ews</a><a class="_item" href="#">Gallery</a><a class="_item" href="#">Partners</a><  a class="_item" href="#">About</a><a class="_item" href="#">Contacts</a></div></nav  ><h1 class="_title">Hello, World!</h1><div class="myslider _myslider"><div class="_  slide">Content</div><div class="_slide -active">Content</div><div class="_slide">Co  ntent</div></div><p class="_text">Good weather</p></header></main><script src="js/e  xternal.js"></script><script src="js/internal.js"></script><script type="text/javascript" src="bundle.js"></script></body></html>:
+  SyntaxError: Unexpected token (1:0)
+  
+  - compiler.js:79 childCompiler.runAsChild
+    [webpack_start_pack]/[html-webpack-plugin]/lib/compiler.js:79:16
+  
+  - Compiler.js:343 compile
+    [webpack_start_pack]/[webpack]/lib/Compiler.js:343:11
+  
+  - Compiler.js:671 hooks.afterCompile.callAsync.err
+    [webpack_start_pack]/[webpack]/lib/Compiler.js:671:15
+  
+  
+  - Hook.js:154 AsyncSeriesHook.lazyCompileHook
+    [webpack_start_pack]/[tapable]/lib/Hook.js:154:20
+  
+  - Compiler.js:668 compilation.seal.err
+    [webpack_start_pack]/[webpack]/lib/Compiler.js:668:31
+  
+  
+  - Hook.js:154 AsyncSeriesHook.lazyCompileHook
+    [webpack_start_pack]/[tapable]/lib/Hook.js:154:20
+  
+  - Compilation.js:1385 hooks.optimizeAssets.callAsync.err
+    [webpack_start_pack]/[webpack]/lib/Compilation.js:1385:35
+  
+  
+  - Hook.js:154 AsyncSeriesHook.lazyCompileHook
+    [webpack_start_pack]/[tapable]/lib/Hook.js:154:20
+  
+  - Compilation.js:1376 hooks.optimizeChunkAssets.callAsync.err
+    [webpack_start_pack]/[webpack]/lib/Compilation.js:1376:32
+  
+  
+  - Hook.js:154 AsyncSeriesHook.lazyCompileHook
+    [webpack_start_pack]/[tapable]/lib/Hook.js:154:20
+  
+  - Compilation.js:1371 hooks.additionalAssets.callAsync.err
+    [webpack_start_pack]/[webpack]/lib/Compilation.js:1371:36
+  
+  
+  - Hook.js:154 AsyncSeriesHook.lazyCompileHook
+    [webpack_start_pack]/[tapable]/lib/Hook.js:154:20
+  
+  - Compilation.js:1367 hooks.optimizeTree.callAsync.err
+    [webpack_start_pack]/[webpack]/lib/Compilation.js:1367:32
+  
+  
+  - Hook.js:154 AsyncSeriesHook.lazyCompileHook
+    [webpack_start_pack]/[tapable]/lib/Hook.js:154:20
+  
+  - Compilation.js:1304 Compilation.seal
+    [webpack_start_pack]/[webpack]/lib/Compilation.js:1304:27
+  
+  - Compiler.js:665 compilation.finish.err
+    [webpack_start_pack]/[webpack]/lib/Compiler.js:665:18
+  
+  - Compilation.js:1224 hooks.finishModules.callAsync.err
+    [webpack_start_pack]/[webpack]/lib/Compilation.js:1224:4
+  
+  
+  - Hook.js:154 AsyncSeriesHook.lazyCompileHook
+    [webpack_start_pack]/[tapable]/lib/Hook.js:154:20
+  
+  - Compilation.js:1216 Compilation.finish
+    [webpack_start_pack]/[webpack]/lib/Compilation.js:1216:28
+  
+  - Compiler.js:662 hooks.make.callAsync.err
+    [webpack_start_pack]/[webpack]/lib/Compiler.js:662:17
+  
+  
+  - Compilation.js:1148 _addModuleChain
+    [webpack_start_pack]/[webpack]/lib/Compilation.js:1148:12
+  
+  - Compilation.js:1060 processModuleDependencies.err
+    [webpack_start_pack]/[webpack]/lib/Compilation.js:1060:9
+  
+</pre>
