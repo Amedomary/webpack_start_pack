@@ -5,15 +5,15 @@ const PATHS = {
   src: path.join(__dirname, './src'),
   dist: path.join(__dirname, './dist'),
 }
-const PAGES_DIR = `${PATHS.src}/pug/`
-const PAGES = fs.readdirSync(PAGES_DIR).filter(fileName => fileName.endsWith('.pug'))
+const PAGES_DIR = `${PATHS.src}/pages/`;
+const PAGES = fs.readdirSync(PAGES_DIR).filter(fileName => fileName.endsWith('.pug'));
 
 module.exports = {
     mode: 'development',
     entry: './src/index.js',
     devtool: 'inline-source-map',
     devServer: {
-      contentBase: './dist'
+      contentBase: PATHS.dist
     },
     output: {
         filename: 'bundle.js',
